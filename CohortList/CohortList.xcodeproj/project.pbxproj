@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1E5391282AFE5200B60E1E /* StudentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E5390282AFE5200B60E1E /* StudentListTableViewController.swift */; };
 		D2F7B25C279650B800A84719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7B25B279650B800A84719 /* AppDelegate.swift */; };
 		D2F7B25E279650B800A84719 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7B25D279650B800A84719 /* SceneDelegate.swift */; };
 		D2F7B263279650B800A84719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F7B261279650B800A84719 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1E5390282AFE5200B60E1E /* StudentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTableViewController.swift; sourceTree = "<group>"; };
 		D2F7B258279650B800A84719 /* CohortList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CohortList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7B25B279650B800A84719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F7B25D279650B800A84719 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +37,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1E538D282AFDBD00B60E1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC1E538E282AFDC900B60E1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC1E538F282AFDE100B60E1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC1E5390282AFE5200B60E1E /* StudentListTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D2F7B24F279650B700A84719 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +78,9 @@
 		D2F7B25A279650B800A84719 /* CohortList */ = {
 			isa = PBXGroup;
 			children = (
-				D2F7B2732796513F00A84719 /* View Controllers */,
-				D2F7B2722796513300A84719 /* Model Controllers */,
-				D2F7B2702796512A00A84719 /* Models */,
+				BC1E538D282AFDBD00B60E1E /* Model */,
+				BC1E538E282AFDC900B60E1E /* View */,
+				BC1E538F282AFDE100B60E1E /* Controllers */,
 				D2F7B26F279650CC00A84719 /* Resources */,
 				D2F7B261279650B800A84719 /* Main.storyboard */,
 			);
@@ -73,27 +97,6 @@
 				D2F7B269279650B900A84719 /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		D2F7B2702796512A00A84719 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D2F7B2722796513300A84719 /* Model Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controllers";
-			sourceTree = "<group>";
-		};
-		D2F7B2732796513F00A84719 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1E5391282AFE5200B60E1E /* StudentListTableViewController.swift in Sources */,
 				D2F7B25C279650B800A84719 /* AppDelegate.swift in Sources */,
 				D2F7B25E279650B800A84719 /* SceneDelegate.swift in Sources */,
 			);
