@@ -10,6 +10,7 @@
 		BC1E5391282AFE5200B60E1E /* StudentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E5390282AFE5200B60E1E /* StudentListTableViewController.swift */; };
 		BC1E5393282B09C500B60E1E /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E5392282B09C500B60E1E /* Student.swift */; };
 		BC1E5395282B0AAD00B60E1E /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E5394282B0AAD00B60E1E /* StudentController.swift */; };
+		BC1E5399282C526B00B60E1E /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E5398282C526B00B60E1E /* StudentDetailViewController.swift */; };
 		D2F7B25C279650B800A84719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7B25B279650B800A84719 /* AppDelegate.swift */; };
 		D2F7B25E279650B800A84719 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7B25D279650B800A84719 /* SceneDelegate.swift */; };
 		D2F7B263279650B800A84719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F7B261279650B800A84719 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		BC1E5390282AFE5200B60E1E /* StudentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTableViewController.swift; sourceTree = "<group>"; };
 		BC1E5392282B09C500B60E1E /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		BC1E5394282B0AAD00B60E1E /* StudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
+		BC1E5398282C526B00B60E1E /* StudentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
 		D2F7B258279650B800A84719 /* CohortList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CohortList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7B25B279650B800A84719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F7B25D279650B800A84719 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,20 +51,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BC1E538E282AFDC900B60E1E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				BC1E5390282AFE5200B60E1E /* StudentListTableViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		BC1E538F282AFDE100B60E1E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				BC1E5394282B0AAD00B60E1E /* StudentController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BC1E539A282C527700B60E1E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC1E5390282AFE5200B60E1E /* StudentListTableViewController.swift */,
+				BC1E5398282C526B00B60E1E /* StudentDetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D2F7B24F279650B700A84719 = {
@@ -84,8 +87,8 @@
 		D2F7B25A279650B800A84719 /* CohortList */ = {
 			isa = PBXGroup;
 			children = (
+				BC1E539A282C527700B60E1E /* ViewControllers */,
 				BC1E538D282AFDBD00B60E1E /* Model */,
-				BC1E538E282AFDC900B60E1E /* View */,
 				BC1E538F282AFDE100B60E1E /* Controllers */,
 				D2F7B26F279650CC00A84719 /* Resources */,
 				D2F7B261279650B800A84719 /* Main.storyboard */,
@@ -181,6 +184,7 @@
 				D2F7B25C279650B800A84719 /* AppDelegate.swift in Sources */,
 				D2F7B25E279650B800A84719 /* SceneDelegate.swift in Sources */,
 				BC1E5393282B09C500B60E1E /* Student.swift in Sources */,
+				BC1E5399282C526B00B60E1E /* StudentDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

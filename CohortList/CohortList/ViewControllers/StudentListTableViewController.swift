@@ -8,15 +8,12 @@
 import UIKit
 
 class StudentListTableViewController: UITableViewController {
-    @IBOutlet weak var studentNameTextField: UITextField!
-    @IBOutlet weak var cohortIDTextField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     @IBAction func addButtonTapped(_ sender: Any) {
-        createStudent()
 
 }
     
@@ -36,14 +33,6 @@ class StudentListTableViewController: UITableViewController {
         // Configure the cell...
         return cell
     }
-    func createStudent() {
-        guard let studentName = studentNameTextField.text else {return}
-        guard let cohortID = cohortIDTextField.text else {return}
-        StudentController.sharedInstance.createStudent(name: studentName, cohortID: Int(cohortID) ?? 0)
-        tableView.reloadData()
-        
-    }
-
 
     /*
     // Override to support conditional editing of the table view.
