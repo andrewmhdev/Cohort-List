@@ -15,8 +15,8 @@ class StudentController {
     static let sharedInstance = StudentController()
     // it allows only a single instance of itself to be established
     
-    func createStudent(name: String, studentID: Int) {
-        let newStudent = Student(name: name, studentID: studentID)
+    func createStudent(name: String, cohortID: Int) {
+        let newStudent = Student(name: name, cohortID: cohortID)
         students.append(newStudent)
     }
     

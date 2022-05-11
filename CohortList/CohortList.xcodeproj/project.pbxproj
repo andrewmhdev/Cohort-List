@@ -52,6 +52,7 @@
 		BC1E538E282AFDC900B60E1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BC1E5390282AFE5200B60E1E /* StudentListTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -59,7 +60,6 @@
 		BC1E538F282AFDE100B60E1E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BC1E5390282AFE5200B60E1E /* StudentListTableViewController.swift */,
 				BC1E5394282B0AAD00B60E1E /* StudentController.swift */,
 			);
 			path = Controllers;

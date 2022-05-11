@@ -11,8 +11,8 @@ class Student {
     let name: String
     let cohortID: Int
     
-    init(name: String, studentID: Int) {
+    init(name: String, cohortID: Int) {
         self.name = name
-        self.cohortID = studentID
+        self.cohortID = cohortID
     }
 }

@@ -19,23 +19,35 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vEs-jf-X1a">
-                                    <rect key="frame" x="8" y="8" width="169" height="72"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vEs-jf-X1a">
+                                    <rect key="frame" x="4" y="4" width="406" height="92"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Student name..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqe-kW-XgU">
-                                            <rect key="frame" x="0.0" y="0.0" width="169" height="34"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="44"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="studentNameTextField:" destination="HHx-nj-fqT" eventType="editingDidEnd" id="WKn-Wi-rMX"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Cohort ID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Khg-r1-dPi">
-                                            <rect key="frame" x="0.0" y="38" width="169" height="34"/>
+                                            <rect key="frame" x="0.0" y="48" width="406" height="44"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="cohortIDTextField:" destination="HHx-nj-fqT" eventType="editingDidEnd" id="gsS-gI-ZyO"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <constraints>
+                                <constraint firstItem="vEs-jf-X1a" firstAttribute="leading" secondItem="eU0-OI-7vA" secondAttribute="leading" constant="4" id="Om4-0h-T5r"/>
+                                <constraint firstAttribute="trailing" secondItem="vEs-jf-X1a" secondAttribute="trailing" constant="4" id="RRC-FX-ICB"/>
+                                <constraint firstItem="vEs-jf-X1a" firstAttribute="top" secondItem="eU0-OI-7vA" secondAttribute="top" constant="4" id="dax-ae-t9F"/>
+                                <constraint firstAttribute="bottom" secondItem="vEs-jf-X1a" secondAttribute="bottom" constant="4" id="pgK-8W-wNh"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentCell" textLabel="ZVT-pc-6mg" detailTextLabel="2d0-ql-4Ek" style="IBUITableViewCellStyleValue1" id="UgP-NB-NSS">
@@ -68,13 +80,22 @@
                             <outlet property="delegate" destination="8zw-Za-0fd" id="ZA5-fp-vca"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Add" id="ASK-R0-z0P"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="qwe-ch-qu0"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="qwe-ch-qu0">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="r89-Hk-Mat">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="8zw-Za-0fd" id="PRb-8Z-BUc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cohortIDTextField" destination="Khg-r1-dPi" id="Aes-Dv-94c"/>
+                        <outlet property="studentNameTextField" destination="zqe-kW-XgU" id="8ll-xS-SzE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tjp-6A-kfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="HHx-nj-fqT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="915.94202898550736" y="-561.16071428571422"/>
         </scene>
