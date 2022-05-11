@@ -71,10 +71,85 @@
                     <view key="view" contentMode="scaleToFill" id="zIJ-Lh-hDy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="aXI-PP-OvH">
+                                <rect key="frame" x="20" y="108" width="379" height="232.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cohort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8h-bk-gvY">
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cohort number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0s4-FP-dmN">
+                                        <rect key="frame" x="0.0" y="45.5" width="379" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tell us about yourself..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vX1-CZ-cUB">
+                                        <rect key="frame" x="0.0" y="104.5" width="379" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BcF-L0-XfL">
+                                <rect key="frame" x="20" y="360.5" width="374" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqF-se-Pu6">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                        <connections>
+                                            <action selector="clearButtonTapped:" destination="2N3-HB-xgk" eventType="touchUpInside" id="3pg-Cr-RcD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQr-1t-PnC">
+                                        <rect key="frame" x="189.5" y="0.0" width="184.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                        <connections>
+                                            <action selector="deleteButtonTapped:" destination="2N3-HB-xgk" eventType="touchUpInside" id="Ox1-Z8-tGd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XRt-ZH-jx3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aXI-PP-OvH" firstAttribute="leading" secondItem="XRt-ZH-jx3" secondAttribute="leading" constant="20" id="3NV-ix-zR8"/>
+                            <constraint firstItem="BcF-L0-XfL" firstAttribute="leading" secondItem="XRt-ZH-jx3" secondAttribute="leading" constant="20" id="6AS-qV-xfp"/>
+                            <constraint firstItem="aXI-PP-OvH" firstAttribute="top" secondItem="XRt-ZH-jx3" secondAttribute="top" constant="20" id="Cff-OB-2wE"/>
+                            <constraint firstItem="XRt-ZH-jx3" firstAttribute="bottom" secondItem="BcF-L0-XfL" secondAttribute="bottom" constant="421.5" id="GTo-WT-l5D"/>
+                            <constraint firstItem="XRt-ZH-jx3" firstAttribute="bottom" secondItem="aXI-PP-OvH" secondAttribute="bottom" constant="472.5" id="abH-EY-pyE"/>
+                            <constraint firstItem="XRt-ZH-jx3" firstAttribute="trailing" secondItem="aXI-PP-OvH" secondAttribute="trailing" constant="15" id="dKg-rb-I79"/>
+                            <constraint firstItem="XRt-ZH-jx3" firstAttribute="trailing" secondItem="BcF-L0-XfL" secondAttribute="trailing" constant="20" id="dnX-JH-w1A"/>
+                            <constraint firstItem="BcF-L0-XfL" firstAttribute="top" secondItem="aXI-PP-OvH" secondAttribute="bottom" constant="20" id="s0C-bg-POx"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="x9k-yx-ci2"/>
+                    <navigationItem key="navigationItem" id="x9k-yx-ci2">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(Student Name)" textAlignment="natural" minimumFontSize="17" id="DbI-8V-hRD">
+                            <rect key="frame" x="141.5" y="5" width="131" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="pVM-oW-c03">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="2N3-HB-xgk" id="fhF-vG-5hS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cohortLabel" destination="A8h-bk-gvY" id="0bg-nU-lxZ"/>
+                        <outlet property="cohortNumberTextField" destination="0s4-FP-dmN" id="I6X-nf-Ia8"/>
+                        <outlet property="studentDescriptionTextView" destination="vX1-CZ-cUB" id="8EM-VQ-z3S"/>
+                        <outlet property="studentNameTextField" destination="DbI-8V-hRD" id="4VG-vs-GFa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAS-Kx-AdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +158,6 @@
         <!--Navigation Controller-->
         <scene sceneID="xhE-La-HwX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MKI-TT-zAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ldx-8g-ig6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sl5-dN-hos">
@@ -95,6 +169,7 @@
                         <segue destination="8zw-Za-0fd" kind="relationship" relationship="rootViewController" id="bev-g5-flH"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKI-TT-zAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="234.78260869565219" y="-561.16071428571422"/>
         </scene>
@@ -103,6 +178,9 @@
         <segue reference="QCl-Tb-7Xj"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
